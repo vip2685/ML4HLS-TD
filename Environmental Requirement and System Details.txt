@@ -1,0 +1,12 @@
+1. The proposed ML based non-infected and Trojan-infected classification technique of HLS-aided IP design is implemented on a system configured with Intel(R) Core(TM) i5-8250U 1.60GHz CPU with 8GB RAM. The proposed LR and RF classifier based ML framework is developed within Anaconda platform using Jupyter notebook with python environment and using Scikit-learn (open source machine learning library). 
+
+2. The model tuning parameters or hyperparameters utilized in the LR and RF-classifier based ML model are as follows: ‘random_state=0/42/75/100’, ‘max_iter=150’, ‘n_estimators=150’, ‘shuffle=True’, and ‘n_splits=K’ (where, K is 5 to 10 respectively). The selection method for training used is ‘random search’, which samples a fixed number of hyperparameter settings from specified distributions, making it faster for larger spaces. Additionally, K-fold cross validation was also performed as a selection method for training-testing.
+
+3. Proposed LR-based detection with different seed values 
+(Corresponding to different split ratio)
+Note: max_iter=150, solver=‘lbfgs’, C=1.0, fit_intercept=True, intercept_scaling=1
+
+4. Proposed RF-based detection with different seed values 
+(Corresponding to different split ratio) 
+Note: n_estimators=150, criterion=‘gini’, max_depth=None
+
